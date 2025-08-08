@@ -47,7 +47,7 @@ app = Flask(__name__)
 
 
 @app.route("/")
-def hello() -> str:
+def copilotWaitSec() -> str:
     # Use basic logging with custom fields
     logger.info(logField="custom-entry", arbitraryField="custom-entry")
 
