@@ -34,7 +34,7 @@
 
 #     return {"finished": True, "start_time": start_time, "finish_time": finish_time}
 
-sub
+
 import signal
 import sys
 from types import FrameType
