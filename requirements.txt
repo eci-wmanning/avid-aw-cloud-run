@@ -1,8 +1,13 @@
 Flask==3.0.1
 functions-framework==3.*
 gunicorn==23.0.0
-
+openai==1.*
 requests==2.32.4
 structlog==25.1.0
-
-google-auth==2.3.2
+pymsteams==0.2.*
+pydantic==2.*
+typing_extensions==4.*
+google-cloud-firestore==2.20.1
+firebase-admin==6.7.0
+google-auth==2.39.0
+# firebase-functions==0.4.3
