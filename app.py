@@ -15,7 +15,7 @@
 import signal
 import sys
 from types import FrameType
-
+from GoogleCloudFunctions import copilotWaitSec
 from flask import Flask
 
 from utils.logging import logger
@@ -44,6 +44,10 @@ def shutdown_handler(signal_int: int, frame: FrameType) -> None:
     # Safely exit program
     sys.exit(0)
 
+@app.route("/wait-sec")
+def wait_sec(request) -> str:
+    # Use basic logging with custom fields
+    copilotWaitSec(request)
 
 if __name__ == "__main__":
     # Running application locally, outside of a Google Cloud Environment

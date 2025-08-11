@@ -1,0 +1,8 @@
+functions-framework==3.*
+pydantic==2.*
+openai==1.*
+typing_extensions==4.*
+google-cloud-firestore==2.20.1
+firebase-functions==0.4.2
+firebase-admin==6.7.0
+google-auth==2.39.0

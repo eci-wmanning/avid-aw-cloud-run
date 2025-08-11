@@ -1,0 +1,1029 @@
+{  
+  common: {
+    DisplayName: "Common",
+    Topics: [
+  {
+    TriggerId: "main",
+    ExternalIntentId: "BacksplashCountertopUnevenEdges",
+    DisplayName: "Uneven Backsplash/Counter Edge",
+    TopicId: "crc5c_interiorFinishes.topic.BacksplashesCountertopsWithExcessiveEdges",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Countertops", "countertops"]
+  },
+    ]
+  },
+  interiorFinishes: {
+    DisplayName: "Interior Finishes",
+    SchemaName: "interiorFinishes",
+    Topics: [
+  {
+    TriggerId: "main",
+    ExternalIntentId: "BacksplashCountertopUnevenEdges",
+    DisplayName: "Uneven Backsplash/Counter Edge",
+    TopicId: "crc5c_interiorFinishes.topic.BacksplashesCountertopsWithExcessiveEdges",
+    Topic: "interiorFinishes",
+    SubTopics: ["Countertops", "countertops", "Interior Wall Finish", "interior_wall_finish"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "Bouncing",
+    DisplayName: "Bouncing Stairs",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorStairsDeflection",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Stairs", "stairs"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "CabinetDoorDrawerBinds",
+    DisplayName: "Door/Drawer Binds",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorFinishesCabinetsCabinetDrawerorDoorBinds",
+    Topic: "interiorFinishes",
+    SubTopics: ["Cabinets", "cabinets"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "CabinetDoorDrawerCracked",
+    DisplayName: "Door/Drawer Cracked",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorFinishesCabinetsCabinetDrawerorDoorisCracked",
+    Topic: "interiorFinishes",
+    SubTopics: ["Cabinets", "cabinets"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "CabinetMisalignedNotSquare",
+    DisplayName: "Misaligned/Not Square",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorFinishCabinetsCabinetsMisaligned",
+    Topic: "interiorFinishes",
+    SubTopics: ["Cabinets", "cabinets"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "BadJoint",
+    DisplayName: "Bad Wall Joint",
+    TopicId: "crc5c_interiorFinishes.topic.BadAngularDrywallJoints",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "CabinetNicksChipsScratches",
+    DisplayName: "Nicks Chips Scratches",
+    TopicId: "crc5c_interiorFinishes.topic.Untitled",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Cabinets", "cabinets"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "CabinetNotMeetingWall",
+    DisplayName: "Not Meeting Wall",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorFinishCabinetsCabinetnotmeetingwall",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Cabinets", "cabinets"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "CabinetsHanging",
+    DisplayName: "Cabinets Hanging",
+    TopicId: "crc5c_interiorFinishes.topic.CabinetsHanging",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Cabinets", "cabinets"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "CabinetsNotLevel",
+    DisplayName: "Cabinets Not Level",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorFinishesCabinetsCabinetsNotLevel",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Cabinets", "cabinets"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "CabinetWontStayClosed",
+    DisplayName: "Won't Stay Closed",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorFinishesCabinetsCabinetWontStayClosed",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Cabinets", "cabinets"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "ChippedStoneSolidCountertops",
+    DisplayName: "Chipped Counter",
+    TopicId: "crc5c_interiorFinishes.topic.ChippedStoneorSolidCountertop",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Countertops", "countertops"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "ColorMismatch",
+    DisplayName: "Color Mismatch",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorWallFinishMismatch",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "CountertopsNotLevel",
+    DisplayName: "Counter Not Level",
+    TopicId: "crc5c_interiorFinishes.topic.CountertopsNotLevel",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Countertops", "countertops"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "CrackedCaulk",
+    DisplayName: "Cracked Caulk",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorFinishTrimMoldingsCaulkcracking",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Trim and Moldings", "trim_and_moldings", "Interior Wall Finish", "interior_wall_finish"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "CrackedChippedLaminateSurface",
+    DisplayName: "Crack/Chipped Laminate",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorFinishesCountertopsCrackedorChippedLaminateSurface",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Countertops", "countertops"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "CrackedMarbleAroundDrain",
+    DisplayName: "Cracked Marble",
+    TopicId: "crc5c_interiorFinishes.topic.CrackedMarbleAroundDrain",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Countertops", "countertops"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "CrackedTileGrout",
+    DisplayName: "Cracked Tile/Grout",
+    TopicId: "crc5c_interiorFinishes.topic.CrackedBacksplashGrout",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Countertops", "countertops", "Interior Wall Finish", "interior_wall_finish", "Trim and Moldings", "trim_and_moldings"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "DamagedDrywall",
+    DisplayName: "Damaged Drywall",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorFinishInteriorWallFinishDamageddrywall",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "DelaminatedCabinet",
+    DisplayName: "Delaminated Cabinet",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorFinishesCabinetsDelaminatedDrawerorDoor",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Cabinets", "cabinets"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "DelaminatedCountertop",
+    DisplayName: "Delaminated Counter Top",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorFinishesCountertopsDelaminatedCountertops",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Countertops", "countertops"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "DiscoloredStainBlemish",
+    DisplayName: "Discolored Stain or Blemish",
+    TopicId: "crc5c_interiorFinishes.topic.CountertopDiscolorationorBlemish",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Countertops", "countertops"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "FinishedWallCeilingCrack",
+    DisplayName: "Wall/Ceiling Crack",
+    TopicId: "crc5c_interiorFinishes.topic.FinishedWallorCeilingCracks",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "GapInTrim",
+    DisplayName: "Trim Gaps",
+    TopicId: "crc5c_interiorFinishes.topic.TrimMoldingsGaps",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Trim and Moldings", "trim_and_moldings", "Interior Wall Finish", "interior_wall_finish"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "GroutUneven",
+    DisplayName: "Grout Uneven",
+    TopicId: "crc5c_interiorFinishes.topic.UnevenGroutLines",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Trim and Moldings", "trim_and_moldings", "Interior Wall Finish", "interior_wall_finish", "countertops", "Countertops"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "HammerMarks",
+    DisplayName: "Hammer Marks",
+    TopicId: "crc5c_interiorFinishes.topic.TrimMoldingsHammerMarks",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Trim and Moldings", "trim_and_moldings", "Interior Wall Finish", "interior_wall_finish"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "HingesSlidesNotWorking",
+    DisplayName: "Hinges/Slide Issue",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorFinishesCabinetsHingesorSlidesNotWorking",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Cabinets", "cabinets"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "IDPaintColor",
+    DisplayName: "Paint Color",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorFinishInteriorWallFinishPaintColor",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish", "Trim and Moldings", "trim_and_moldings"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "MoldMildew",
+    DisplayName: "Mold/Mildew",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorWallFinishMoldorMildew",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "NailHoles",
+    DisplayName: "Nail Holes",
+    TopicId: "crc5c_interiorFinishes.topic.TrimMoldingsNails",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Trim and Moldings", "trim_and_moldings", "Interior Wall Finish", "interior_wall_finish"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "NonMatchingTexture",
+    TopicId: "crc5c_interiorFinishes.topic.Non-MatchingDrywallTexture",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish"]
+  },
+  {
+    DisplayName: "Texture Mismatch",
+    ExternalIntentId: "NonMatchingTexture",
+    TopicId: "crc5c_interiorFinishes.topic.Non-MatchingDrywallTexture",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "PaintSplatterCoverageMismatch",
+    DisplayName: "Paint Coverage/Mismatch",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorWallFinishPaintIssueWalls",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "PeelingCovering",
+    DisplayName: "Peeling",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorWallFinishPeelingWallcover",
+    Topic: "interiorFinishes",
+     SubTopics: ["Interior Wall Finish", "interior_wall_finish"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "RailingGaps",
+    DisplayName: "Rail Gaps",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorStairsGaps",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Stairs", "stairs"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "RailingLoose",
+    DisplayName: "Loose Railing",
+    TopicId: "crc5c_interiorFinishes.topic.Untitled1_w3D",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Stairs", "stairs"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "ScratchedCountertop",
+    DisplayName: "Scratched Counter Top",
+    TopicId: "crc5c_interiorFinishes.topic.ScratchedCountertops",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Countertops", "countertops"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "SloppyBadFinish",
+    DisplayName: "Bad Wall Finish",
+    TopicId: "crc5c_interiorFinishes.topic.SloppyorBadDrywallFinish",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Trim and Moldings", "trim_and_moldings", "Interior Wall Finish", "interior_wall_finish"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "SplitTrim",
+    DisplayName: "Split/Cracked Trim",
+    TopicId: "crc5c_interiorFinishes.topic.TrimMoldingsSplit",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Trim and Moldings", "trim_and_moldings", "Interior Wall Finish", "interior_wall_finish"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "Squeaking",
+    DisplayName: "Stairs Squeaking",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorFinishStairsStairssqueaking",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Stairs", "stairs"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "SurfaceVariationWoodTrim",
+    DisplayName: "Trim Variation",
+    TopicId: "crc5c_interiorFinishes.topic.TrimMoldingsUneven",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Trim and Moldings", "trim_and_moldings"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "VisibleCountertopsSeams",
+    DisplayName: "Visible Counter Seams",
+    TopicId: "crc5c_interiorFinishes.topic.VisibleCountertopSeams",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Countertops", "countertops"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "VisibleWood",
+    DisplayName: "Visible Wood",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorFinishPaintIssueTrim",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish", "Trim and Moldings", "trim_and_moldings"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "WallCeilingBlemish",
+    DisplayName: "Wall/Ceiling Blemish",
+    TopicId: "crc5c_interiorFinishes.topic.FinishedWallorCeilingBlemishes",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "WarpedCabinet",
+    DisplayName: "Cabinet Warped",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorFinishesCabinetsWarpedCabinetDrawerorDoor",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Cabinets", "cabinets"],
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "WallCoverMismatch",
+    DisplayName: "Wall Cover Mismatch",
+    TopicId: "crc5c_interiorFinishes.topic.InteriorWallFinishMismatch",
+    Topic: "interiorFinishes", 
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish"]
+  },
+    ]
+  },
+  eric: {
+    DisplayName: "Exterior Finishes",
+    SchemaName: "eric",
+    Topics: [
+  {
+    TriggerId: "main",
+    ExternalIntentId: "PeelingChippingFading",
+    DisplayName: "Peeling/chipping/fading",
+    TopicId: "crc5c_eric.topic.ExteriorFinishPaintsStainsPeelingChippingPaint",
+    Topic: "eric", 
+    SubTopics: ["paints_and_stains"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "GeneralSidingDamage",
+    DisplayName: "Siding damage",
+    TopicId: "crc5c_eric.topic.ExteriorFinishSidingDamagedSiding",
+    Topic: "eric", 
+    SubTopics: ["siding"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "DelaminatingPeelingSiding",
+    DisplayName: "Siding peeling",
+    TopicId: "crc5c_eric.topic.ExteriorFinishSidingPeelingsiding",
+    Topic: "eric", 
+    SubTopics: ["siding"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "SplitSiding",
+    DisplayName: "Split Siding",
+    TopicId: "crc5c_eric.topic.ExteriorFinishSidingSplitSiding",
+    Topic: "eric", 
+    SubTopics: ["siding"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Warped trim",
+    ExternalIntentId: "BowedWarpedCuppedTrim",
+    TopicId: "crc5c_eric.topic.ExteriorTrimBowedWarpedCupped",
+    Topic: "eric", 
+    SubTopics: ["exterior_trim"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "TrimGaps",
+    DisplayName: "Trim Gaps",
+    TopicId: "crc5c_eric.topic.ExteriorTrimGaps",
+    Topic: "eric", 
+    SubTopics: ["exterior_trim"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "TrimSplitCracked",
+    DisplayName: "Trim split/cracked",
+    TopicId: "crc5c_eric.topic.ExteriorTrimSplit",
+    Topic: "eric", 
+    SubTopics: ["exterior_trim"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "IncompleteSeparatedStucco",
+    DisplayName: "Incomplete/Separated Stucco",
+    TopicId: "crc5c_eric.topic.IncompleteSeparatedStuccoorVisibleLath",
+    Topic: "eric", 
+    SubTopics: ["stone_siding"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "LooseRattlingTrim",
+    DisplayName: "Loose siding",
+    TopicId: "crc5c_eric.topic.LooseRattlingSidingorTrimCopy",
+    Topic: "eric", 
+    SubTopics: ["exterior_trim"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "DamagedStoneBrick",
+    DisplayName: " Damaged masonry",
+    TopicId: "crc5c_eric.topic.MasonryCrackedorCrumbling",
+    Topic: "eric", 
+    SubTopics: ["stone_siding"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "DiscoloredStainedStoneBrick",
+    DisplayName: "Masonry discolored",
+    TopicId: "crc5c_eric.topic.MasonryDiscolorations",
+    Topic: "eric", 
+    SubTopics: ["stone_siding"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "LeakingMasonry",
+    DisplayName: "Masonry leak",
+    TopicId: "crc5c_eric.topic.MasonryLeakingInside",
+    Topic: "eric", 
+    SubTopics: ["stone_siding"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "UnevenCrookedMasonry",
+    DisplayName: "Uneven masonry",
+    TopicId: "crc5c_eric.topic.MasonryUnevenorCrooked",
+    Topic: "eric", 
+    SubTopics: ["stone_siding"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "KnotsShowThroughPaint",
+    DisplayName: "Knots showing",
+    TopicId: "crc5c_eric.topic.PaintsStainsBleedingKnots",
+    Topic: "eric", 
+    SubTopics: ["paints_and_stains", "exterior_trim"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Overspray",
+    ExternalIntentId: "PaintOversprayOntoOtherSurfaces",
+    TopicId: "crc5c_eric.topic.PaintsStainsOverspray",
+    Topic: "eric", 
+    SubTopics: ["paints_and_stains"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Repair mismatch",
+    ExternalIntentId: "PaintOrStainRepairWorkDoesn'tMatch",
+    TopicId: "crc5c_eric.topic.PaintStainsRepairWorkMismatch",
+    Topic: "eric", 
+    SubTopics: ["paints_and_stains"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Siding bleed through",
+    ExternalIntentId: "VisibleLath",
+    TopicId: "crc5c_eric.topic.SidingBleedThrough",
+    Topic: "eric", 
+    SubTopics: ["siding", "paints_and_stains"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Bowed/warped siding",
+    ExternalIntentId: "BowedWarpedSiding",
+    TopicId: "crc5c_eric.topic.SidingBowed",
+    Topic: "eric", 
+    SubTopics: ["siding", "stone_siding"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Damaged cement board",
+    ExternalIntentId: "DamagedCementBoard",
+    TopicId: "crc5c_eric.topic.SidingDamagedCementBoard",
+    Topic: "eric", 
+    SubTopics: ["siding"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Siding gaps",
+    ExternalIntentId: "GapsInSidingEdgeBadCut",
+    TopicId: "crc5c_eric.topic.SidingEdgesEndGaps",
+    Topic: "eric", 
+    SubTopics: ["siding", "stone_siding"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Faded siding",
+    ExternalIntentId: "FadedSiding",
+    TopicId: "crc5c_eric.topic.SidingFading",
+    Topic: "eric", 
+    SubTopics: ["siding", "stone_siding"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Siding nail issue",
+    ExternalIntentId: "SidingFasteners",
+    TopicId: "crc5c_eric.topic.SidingFasteners",
+    Topic: "eric", 
+    SubTopics: ["siding", "stone_siding"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Loose siding",
+    ExternalIntentId: "LooseRattlingSidingOrTrim",
+    TopicId: "crc5c_eric.topic.SidingLooseorRattling",
+    Topic: "eric", 
+    SubTopics: ["siding", "stone_siding"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Siding unparallel",
+    ExternalIntentId: "SidingNotParallel",
+    TopicId: "crc5c_eric.topic.SidingNotParallel",
+    Topic: "eric", 
+    SubTopics: ["siding", "stone_siding"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Start Over",
+    ExternalIntentId: "RestartConversation",
+    TopicId: "crc5c_eric.topic.StartOver",
+    Topic: "eric", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Stucco stain",
+    ExternalIntentId: "DiscoloredStucco",
+    TopicId: "crc5c_eric.topic.StuccoDiscolorations",
+    Topic: "eric", 
+    SubTopics: ["siding", "stone_siding"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Leaking stucco",
+    ExternalIntentId: "LeakingStucco",
+    TopicId: "crc5c_eric.topic.StuccoLeakingInside",
+    Topic: "eric", 
+    SubTopics: ["siding", "stone_siding"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Stucco finish",
+    ExternalIntentId: "StuccoTextureColor",
+    TopicId: "crc5c_eric.topic.StuccoTextureorColor",
+    Topic: "eric", 
+    SubTopics: ["siding", "stone_siding"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Lath wire shows",
+    ExternalIntentId: "VisibleStuccoPanelsLath",
+    TopicId: "crc5c_eric.topic.StuccoVisibleLath",
+    Topic: "eric", 
+    SubTopics: ["siding", "stone_siding"]
+  },
+  {
+    TriggerId: "main",
+    kind: "ExternalIntent",
+    ExternalIntentId: "EmergencyOrUrgentIssue",
+    TopicId: "crc5c_eric.topic.Untitled_EYA",
+    Topic: "eric", 
+    SubTopics: []
+  }
+    ]
+  },
+  plumbing: {
+    DisplayName: "Plumbing",
+    Topics: [
+  {
+    TriggerId: "main",
+    DisplayName: "Sweating plumbing",
+    ExternalIntentId: "CondensationOnPlumbing",
+    TopicId: "crc5c_plumbing.topic.7-1-2Condensationonplumbing",
+    Topic: "plumbing", 
+    SubTopics: ["sewer", "water_supply"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Plumbing fixtures",
+    ExternalIntentId: "PlumbingFixturesStainFit",
+    TopicId: "crc5c_plumbing.topic.7-2",
+    Topic: "plumbing", 
+    SubTopics: ["fixtures"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Grinder pump",
+    ExternalIntentId: "GrinderPumpNotWorking",
+    TopicId: "crc5c_plumbing.topic.Grinderpump",
+    Topic: "plumbing", 
+    SubTopics: ["sewer", "fixtures"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Disposal issue",
+    ExternalIntentId: "GarbageDisposalIssue",
+    TopicId: "crc5c_plumbing.topic.PlumbingPlumbingFixturesDisposalnotworking",
+    Topic: "plumbing", 
+    SubTopics: ["fixtures", "sewer"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Loose faucet handle",
+    ExternalIntentId: "LooseFaucetHandle",
+    TopicId: "crc5c_plumbing.topic.PlumbingPlumbingFixturesLooseFaucet",
+    Topic: "plumbing", 
+    SubTopics: ["fixtures"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Sump pump",
+    ExternalIntentId: "SumpPumpIssue",
+    TopicId: "crc5c_plumbing.topic.PlumbingPlumbingFixturesSumppump",
+    Topic: "plumbing", 
+    SubTopics: ["sewer"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Clogged drain",
+    ExternalIntentId: "DrainingIssue",
+    TopicId: "crc5c_plumbing.topic.PlumbingSewerorSepticSystemCloggedDrain",
+    Topic: "plumbing", 
+    SubTopics: ["sewer", "fixtures"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Clogged toilet",
+    ExternalIntentId: "CloggedToilet",
+    TopicId: "crc5c_plumbing.topic.PlumbingSewerorSepticSystemCloggedToilet",
+    Topic: "plumbing", 
+    SubTopics: ["sewer", "fixtures"]
+  },
+    {
+    TriggerId: "main",
+    DisplayName: "Water outside tub or shower",
+    ExternalIntentId: "WaterOutsideTubShower",
+    TopicId: "crc5c_plumbing.topic.WaterOutsideTuborShower",
+    Topic: "plumbing", 
+    SubTopics: ["fixtures", "water_supply"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Shower or tub moves",
+    ExternalIntentId: "TubShowerMoves",
+    TopicId: "crc5c_plumbing.topic.ShowerorTubMoves",
+    Topic: "plumbing", 
+    SubTopics: ["fixtures"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Sewer odor",
+    ExternalIntentId: "SewageSmell",
+    TopicId: "crc5c_plumbing.topic.PlumbingSewerorSepticSystemSewerOdor",
+    Topic: "plumbing", 
+    SubTopics: ["sewer"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Burst/frozen pipe",
+    ExternalIntentId: "BurstFrozenWaterPipe",
+    TopicId: "crc5c_plumbing.topic.PlumbingWaterSupplySystemBurstFrozenPipes",
+    Topic: "plumbing", 
+    SubTopics: ["sewer", "water_supply",]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Water heater issue",
+    ExternalIntentId: "WaterHeaterTakesTooLong",
+    TopicId: "crc5c_plumbing.topic.PlumbingWaterSupplySystemWaterheater",
+    Topic: "plumbing", 
+    SubTopics: ["water_supply", "fixtures"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Water pressure",
+    ExternalIntentId: "WaterPressureIssue",
+    TopicId: "crc5c_plumbing.topic.PlumbingWaterSupplySystemWaterpressure",
+    Topic: "plumbing", 
+    SubTopics: ["water_supply", "fixtures"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Septic/sewer issue",
+    ExternalIntentId: "SepticTankIssue",
+    TopicId: "crc5c_plumbing.topic.Septicissues",
+    Topic: "plumbing", 
+    SubTopics: ["sewer"]
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "None",
+    DisplayName: "Not Listed",
+    TopicId: "",
+    Topic: "plumbing", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Toilet flushing/water",
+    ExternalIntentId: "ToiletRunning",
+    TopicId: "crc5c_plumbing.topic.Toiletflushingwater",
+    Topic: "plumbing", 
+    SubTopics: ["sewer", "fixtures"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Tub/Shower Leak",
+    ExternalIntentId: "PlumbingIntent",
+    TopicId: "crc5c_plumbing.topic.TubLeaking",
+    Topic: "plumbing", 
+    SubTopics: ["fixtures", "water_supply"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "SinkTubLeaking",
+    ExternalIntentId: "SinkTubLeaking",
+    TopicId: "crc5c_plumbing.topic.Untitled_2iC",
+    Topic: "plumbing", 
+    SubTopics: ["fixtures", "water_supply"],
+    ShowInUncertainOptions: false
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Water heater unsecured",
+    ExternalIntentId: "WaterHeaterNotSecured",
+    TopicId: "crc5c_plumbing.topic.Waterheaterisnotproperlysecured",
+    Topic: "plumbing", 
+    SubTopics: ["fixtures", "water_supply"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Water leak",
+    ExternalIntentId: "PipeValveFittingLeak",
+    TopicId: "crc5c_plumbing.topic.Waterleak",
+    Topic: "plumbing", 
+    SubTopics: ["fixtures", "water_supply"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Water supply issue",
+    ExternalIntentId: "WaterSupplyNoisyNoWater",
+    TopicId: "crc5c_plumbing.topic.Watersupplyissue",
+    Topic: "plumbing", 
+    SubTopics: ["fixtures", "water_supply"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Sweating plumbing",
+    ExternalIntentId: "CondensationOnPlumbing",
+    TopicId: "crc5c_plumbing.topic.7-1-2Condensationonplumbing",
+    Topic: "plumbing", 
+    SubTopics: ["fixtures", "water_supply"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Plumbing fixtures",
+    ExternalIntentId: "PlumbingFixturesStainFit",
+    TopicId: "crc5c_plumbing.topic.7-2",
+    Topic: "plumbing", 
+    SubTopics: ["fixtures"]
+  }
+    ]
+  },
+  interiorClimateControl: {
+    DisplayName: "Interior Climate Control",
+    Topics: [
+  {
+    TriggerId: "main",
+    DisplayName: "Drafts",
+    ExternalIntentId: "DraftyDoorOrWindow",
+    TopicId: "crc5c_interiorClimateControl.topic.AirflowDraftyDoorWindow",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Drafty outlet",
+    ExternalIntentId: "DraftComingThroughOutlet",
+    TopicId: "crc5c_interiorClimateControl.topic.AirflowDraftyOutlet",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Vacuum system temp",
+    ExternalIntentId: "CentralVacCausingTemperatureHumidityChanges",
+    TopicId: "crc5c_interiorClimateControl.topic.AirflowVacuumSystem",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Damaged ducts",
+    ExternalIntentId: "DamagedDuctwork",
+    TopicId: "crc5c_interiorClimateControl.topic.DuctsAirflowDamaged",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Damp vent",
+    ExternalIntentId: "RegisterVentHasCondensation",
+    TopicId: "crc5c_interiorClimateControl.topic.DuctsAirflowDampRegister",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Duct noise",
+    ExternalIntentId: "NoisyDuctsNoiseAtRegisterVents",
+    TopicId: "crc5c_interiorClimateControl.topic.DuctsAirflowNoise",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Poor airflow",
+    ExternalIntentId: "PoorAirflowInsufficientTempControlFromVents",
+    TopicId: "crc5c_interiorClimateControl.topic.DuctsAirflowPoorAirflow",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Fireplace airflow",
+    ExternalIntentId: "FireplaceWoodstoveAirflowDrawIssue",
+    TopicId: "crc5c_interiorClimateControl.topic.FireplaceWoodstoveAirflow",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Chimney gap",
+    ExternalIntentId: "ChimneySeparatingOrGapping",
+    TopicId: "crc5c_interiorClimateControl.topic.FireplaceWoodstoveAirflowCopy",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Leaking",
+    ExternalIntentId: "FireplaceWoodstoveLeaking",
+    TopicId: "crc5c_interiorClimateControl.topic.FireplaceWoodstoveLeaking",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Rusty damper",
+    ExternalIntentId: "RustOnDamper",
+    TopicId: "crc5c_interiorClimateControl.topic.FireplaceWoodstoveRust",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Window condensatione",
+    ExternalIntentId: "CondensationFrostOnInsideWindows",
+    TopicId: "crc5c_interiorClimateControl.topic.HumidityCondensationInside",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Condensation line clog",
+    ExternalIntentId: "CloggedCondensationLine",
+    TopicId: "crc5c_interiorClimateControl.topic.TempSystemsCloggedLines",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    ExternalIntentId: "None",
+    DisplayName: "Not Listed",
+    TopicId: "",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "HVAC condensation",
+    ExternalIntentId: "CondensationOnHVACComponentsOrSystems",
+    TopicId: "crc5c_interiorClimateControl.topic.TempSystemsCondensation",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Vent fan draft",
+    ExternalIntentId: "IncomingDraftFromExhaustOrVentFans",
+    TopicId: "crc5c_interiorClimateControl.topic.TempSystemsCondensationCopy",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Temperature issue",
+    ExternalIntentId: "IndoorTemperatureNotIdealVaries",
+    TopicId: "crc5c_interiorClimateControl.topic.IndoorTemperatureIsNotIdeal",
+    Topic: "interiorClimateControl", 
+    SubTopics: [],
+    ShowInUncertainOptions: false
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "AC line leak",
+    ExternalIntentId: "LeakingRefrigerantLine",
+    TopicId: "crc5c_interiorClimateControl.topic.TempSystemsLeakyLine",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Radiant floor cold",
+    ExternalIntentId: "RadiantFloorHasColdSpots",
+    TopicId: "crc5c_interiorClimateControl.topic.TempSystemsRadiantFloor_XxG",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Furnace vibrates",
+    ExternalIntentId: "FurnaceOrAirHandlerVibrating",
+    TopicId: "crc5c_interiorClimateControl.topic.TempSystemsVibration",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Fan doesn't vent",
+    ExternalIntentId: "ExhaustOrVentFanNotFunctioning",
+    TopicId: "crc5c_interiorClimateControl.topic.Untitled_eeX",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Vent protruding",
+    ExternalIntentId: "RegisterVentCoverStickingOut",
+    TopicId: "crc5c_interiorClimateControl.topic.VentilationVentCover",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Fireplace/Woodstove cracked brick/panel",
+    ExternalIntentId: "CrackedBrickPanelOrMortarJoint",
+    TopicId: "crc5c_interiorClimateControl.topic.FireplaceWoodstoveCrackedBrickorPanel",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Fireplace/Woodstove discolored",
+    ExternalIntentId: "DiscoloredOrCrackedPaint",
+    TopicId: "crc5c_interiorClimateControl.topic.FireplaceWoodstoveDiscolored",
+    Topic: "interiorClimateControl", 
+    SubTopics: []
+  }
+    ]
+  }
+}
