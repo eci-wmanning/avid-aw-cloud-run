@@ -1,3 +1,4 @@
-from CopilotWaitSec import copilotWaitSec
+
+from .CopilotWaitSec.main import copilotWaitSec
 
 __all__ = ["copilotWaitSec"]

@@ -15,8 +15,8 @@
 import signal
 import sys
 from types import FrameType
-from GoogleCloudFunctions import copilotWaitSec
-from flask import Flask
+import GoogleCloudFunctions
+from flask import Flask, request
 
 from utils.logging import logger
 
@@ -34,6 +34,7 @@ def hello() -> str:
     return "Hello, World!"
 
 
+
 def shutdown_handler(signal_int: int, frame: FrameType) -> None:
     logger.info(f"Caught Signal {signal.strsignal(signal_int)}")
 
@@ -45,9 +46,9 @@ def shutdown_handler(signal_int: int, frame: FrameType) -> None:
     sys.exit(0)
 
 @app.route("/wait-sec")
-def wait_sec(request) -> str:
+def wait_sec() -> str:
     # Use basic logging with custom fields
-    copilotWaitSec(request)
+    return GoogleCloudFunctions.copilotWaitSec(request)
 
 if __name__ == "__main__":
     # Running application locally, outside of a Google Cloud Environment
