@@ -34,6 +34,16 @@ def hello() -> str:
     return "Hello, World!"
 
 
+@app.route("/wait-sec")
+def wait_sec() -> str:
+    # Use basic logging with custom fields
+    return GoogleCloudFunctions.copilotWaitSec(request)
+
+@app.route("/set_copilot_postman_monitor_flag")
+def set_copilot_postman_monitor_flag() -> str:
+    # Use basic logging with custom fields
+    return GoogleCloudFunctions.set_copilot_postman_monitor_flag(request)
+
 
 def shutdown_handler(signal_int: int, frame: FrameType) -> None:
     logger.info(f"Caught Signal {signal.strsignal(signal_int)}")
@@ -44,11 +54,6 @@ def shutdown_handler(signal_int: int, frame: FrameType) -> None:
 
     # Safely exit program
     sys.exit(0)
-
-@app.route("/wait-sec")
-def wait_sec() -> str:
-    # Use basic logging with custom fields
-    return GoogleCloudFunctions.copilotWaitSec(request)
 
 if __name__ == "__main__":
     # Running application locally, outside of a Google Cloud Environment

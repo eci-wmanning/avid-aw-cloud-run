@@ -99,8 +99,7 @@ class FireStoreTopics:
         return topic_ref
         
     
-@functions_framework.http
-def set_monitor_flag(request):
+def set_copilot_postman_monitor_flag(request):
     """HTTP Cloud Function.
     Args:
         request (flask.Request): The request object.
