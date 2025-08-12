@@ -1,8 +1,36 @@
-# Cloud Run Template Microservice
 
-A template repository for a Cloud Run microservice, written in Python
 
-[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
+# Avid Cloud Run  
+This uses Google Cloud Run's microservice template & GitHub integration to host a Flask app API.
+
+[![Avid Cloud Run](https://deploy.cloud.run/button.svg)](https://console.cloud.google.com/run/detail/us-central1/avid-cloud-run/metrics?authuser=0&inv=1&invt=Ab5Tqg&project=homekeep-dev-1614708479592)
+
+## Project Setup
+- Clone the [avid-cloud-run](https://github.com/eci-wmanning/avid-cloud-run) project into your development directory
+- Open project in VSCode or Cursor
+### Create Python Virtual Environment
+  - Open VSCode tools (`cmd` + `shift` + `p`)
+  - Start typing `Python: Create environment` and select the tool
+  - Select `venv` -> `create new`
+  - Select the `requirements.txt` file to install required modules
+### Select Virtual Environment  
+  - Open VSCode tools (`cmd` + `shift` + `p`)
+  - Start typing `Python: Select Interpreter` and select the tool
+  - Select `python3.12`
+
+### Running Project Locally
+- Navigate to the `app.py` file
+- Click the run icon in the toolbar above your project working tree
+
+# Build Environments
+Avid Warranty & Homekeep both have multiple environments associated with the applications.
+## Dev
+
+
+<h3>Github & Google Cloud Integration</h3>
+<details>
+<summary>Open</summary>
+<br>
 
 ## Prerequisite
 
@@ -79,7 +107,7 @@ Invoke will handle establishing local virtual environments, etc. Task definition
     export REGION=us-central1
     gcloud artifacts repositories create $REPOSITORY --location $REGION --repository-format "docker"
     ```
-  
+
 1. Use the gcloud credential helper to authorize Docker to push to your Artifact Registry:
     ```bash
     gcloud auth configure-docker
@@ -123,7 +151,7 @@ Invoke will handle establishing local virtual environments, etc. Task definition
         ```bash
         gcloud services enable run.googleapis.com cloudbuild.googleapis.com iamcredentials.googleapis.com artifactregistry.googleapis.com
         ```
-        
+    
     * Set environment variables.
         ```bash
         export PROJECT_ID="$(gcloud config get-value project)"
@@ -136,7 +164,7 @@ Invoke will handle establishing local virtual environments, etc. Task definition
         export REGION=us-central1
         gcloud artifacts repositories create $REPOSITORY --location $REGION --repository-format "docker"
         ```
-  
+
     * Create service account `token-creator` with `Service Account Token Creator` and `Cloud Run Invoker` roles.
         ```bash
         gcloud iam service-accounts create token-creator
@@ -155,7 +183,7 @@ Invoke will handle establishing local virtual environments, etc. Task definition
             --member="serviceAccount:$PROJECT_NUMBER@cloudbuild.gserviceaccount.com" \
             --role="roles/iam.serviceAccountTokenCreator"
         ```
-    
+
     * Cloud Build also requires permission to deploy Cloud Run services and administer artifacts: 
 
         ```bash
@@ -181,3 +209,5 @@ Please see the [contributing guidelines](CONTRIBUTING.md)
 ## License
 
 This library is licensed under Apache 2.0. Full license text is available in [LICENSE](LICENSE).
+</details>
+
