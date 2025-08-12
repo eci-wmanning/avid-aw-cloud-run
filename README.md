@@ -1,7 +1,10 @@
 
 
 # Avid Cloud Run  
-This uses Google Cloud Run's microservice template & GitHub integration to host a Flask app API.
+
+This project uses Google Cloud Run's microservice template & GitHub integration to host a Flask API.
+
+[![Avid Cloud Run](https://deploy.cloud.run/button.svg)](https://console.cloud.google.com/run/detail/us-central1/avid-cloud-run/metrics?authuser=0&inv=1&invt=Ab5Tqg&project=homekeep-dev-1614708479592)
 
 # Build Environments
 Avid Warranty & Homekeep both have multiple environments associated with their applications; `dev`, `stage` & `prod`
@@ -18,7 +21,8 @@ Avid Warranty & Homekeep both have multiple environments associated with their a
 - Firebase & Google Cloud Project: **Homekeep-AvidWarranty Prod**
 - Merging changes from the `dev` branch into the `main` branch triggers a deploy to the stage and prod env
 
-[![Avid Cloud Run](https://deploy.cloud.run/button.svg)](https://console.cloud.google.com/run/detail/us-central1/avid-cloud-run/metrics?authuser=0&inv=1&invt=Ab5Tqg&project=homekeep-dev-1614708479592)
+
+
 
 ## Project Setup
 - Clone the [avid-cloud-run](https://github.com/eci-wmanning/avid-cloud-run) project into your development directory
