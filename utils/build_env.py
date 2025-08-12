@@ -31,25 +31,20 @@ class EnvConfig:
             
         match self.build_env:
             case BuildEnv.dev:
-                self.project_id = self.env_config['DEV_PROJECT_ID']
+                self.project_id = os.environ.get('DEV_PROJECT_ID')
             case BuildEnv.stage:
-                self.project_id = self.env_config['PROD_PROJECT_ID']
+                self.project_id = os.environ.get('PROD_PROJECT_ID')
             case BuildEnv.prod:
-                self.project_id = self.env_config['PROD_PROJECT_ID']
+                self.project_id = os.environ.get('PROD_PROJECT_ID')
             case None:
-                self.project_id = self.env_config['DEV_PROJECT_ID']
+                self.project_id = os.environ.get('DEV_PROJECT_ID')
                     
         self.env_prefix = self.build_env.value + "_"
-        self.azure_ai_api_key = '13fefMu0Ij6q9WFxSiMgdTtECxzE0I1bB1FgOuxTfa23bLrJuCtxJQQJ99BAACHrzpqXJ3w3AAAAACOGj68q'
+        self.azure_ai_api_key = os.environ.get('AZURE_AI_API_KEY', self.env_config['AZURE_AI_API_KEY'])
         self.azure_ai_endpoint = os.environ.get('AZURE_AI_ENDPOINT', 'https://ai-avidwarrantyhubuswest502033965267.openai.azure.com')
         self.azure_ai_deployment_name = os.environ.get('AZURE_AI_AZURE_AI_DEPLOYMENT_NAME', 'gpt-4o')
         self.azure_ai_model_name = os.environ.get('AZURE_AI_MODEL_NAME', 'gpt-4o')
         self.azure_ai_version = os.environ.get('AZURE_AI_API_VERSION', '2024-10-21')
-        # self.azure_ai_api_key = self.env_config['AZURE_AI_API_KEY']
-        # self.azure_ai_endpoint = self.env_config['AZURE_AI_ENDPOINT']
-        # self.azure_ai_deployment_name = self.env_config['AZURE_AI_AZURE_AI_DEPLOYMENT_NAME']
-        # self.azure_ai_model_name =  self.env_config['AZURE_AI_MODEL_NAME']
-        # self.azure_ai_version =  self.env_config['AZURE_AI_API_VERSION']
         self.firebase_prefix = self.build_env.value.lower() + "_"
         log(azure_ai_api_key=self.azure_ai_api_key)
         

@@ -87,7 +87,6 @@ def shutdown_handler(signal_int: int, frame: FrameType) -> None:
 
 if __name__ == "__main__":
     # Running application locally, outside of a Google Cloud Environment
-    log(key=dotenv_values(".env")['AZURE_AI_API_KEY'])
 
     # handles Ctrl-C termination
     signal.signal(signal.SIGINT, shutdown_handler)
