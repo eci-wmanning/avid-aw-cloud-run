@@ -71,7 +71,7 @@ def ms_teams_error_messenger() -> str:
 @app.route("/deploy_test")
 def deploy_test() -> str:
     logger.info(logField="custom-entry", called_route="deploy_test")
-    env_key=os.environ.get('TEST_SECRET')
+    env_key=os.environ.get('AZURE_AI_API_KEY')
     
     return {"env_key": env_key}
 
