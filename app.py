@@ -38,24 +38,29 @@ def hello() -> str:
 
 @app.route("/wait_sec")
 def wait_sec() -> str:
+    logger.info(logField="custom-entry", called_route="wait_sec")
     return google_cloud_functions.copilotWaitSec(request)
 
 @app.route("/set_copilot_postman_monitor_flag")
 def set_copilot_postman_monitor_flag() -> str:
+    logger.info(logField="custom-entry", called_route="set_copilot_postman_monitor_flag")
     return google_cloud_functions.set_copilot_postman_monitor_flag(request)
 
 
 @app.route("/get_topic_intents")
 def get_topic_intents() -> str:
+    logger.info(logField="custom-entry", called_route="get_topic_intents")
     return google_cloud_functions.getIntents(request)
 
 
 @app.route("/dynamic_qna")
 def dynamic_qna() -> str:
+    logger.info(logField="custom-entry", called_route="dynamic_qna")
     return google_cloud_functions.dynamic_qna(request)
 
 @app.route("/clarify_issue")
 def clarify_issue() -> str:
+    logger.info(logField="custom-entry", called_route="clarify_issue")
     return google_cloud_functions.clarify_issue(request)
 
 
