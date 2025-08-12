@@ -1,9 +1,7 @@
-from _collections_abc import dict_keys
-from dataclasses import dataclass
 import datetime
-import os
 from typing import Any, Optional, Self
 import pymsteams
+from .models import RequestSchema
 
 WEBHOOK_URL="https://ecisolutions.webhook.office.com/webhookb2/d6378769-2918-47bc-b632-08790a115754@3876dbb5-741c-4fe6-9981-06fa00a6d682/IncomingWebhook/7abbc8603b8c4e1c92f8b2c3c2d097c4/0a01f6cb-2c49-49fd-a9d9-b5a0ee1003b4/V21W7Sb9RnE7ySYW0w8pSfwJVEl_4aaFbNFK3ER7dgfXA1"
 
@@ -45,79 +43,7 @@ EXAMPLE_JSON = {
     "unexpected_attr": "Unexpected"
 }
 
-@dataclass
-class SchemaModel(object):
-    @classmethod
-    def from_json(cls, request_json: Any) -> Self:
-        # keys = [f.name for f in dataclasses.fields(cls)]
-        # json_keys = request_json.keys()
-        unexpected_values = []
-        expected_keys: dict_keys[str, Any] = cls.__dataclass_fields__.keys()
-        tmp = {}
-        
-        
-        for key in expected_keys:
-            try:
-                # There's probably a better way to do this programmatically
-                if key == 'user':
-                    tmp[key] = UserSchema.from_json(request_json=request_json[key])
-                elif key == 'user_home':
-                    tmp[key] = HomeSchema.from_json(request_json=request_json[key])
-                elif key == 'system_error_message':
-                    tmp[key] = SystemErrorSchema.from_json(request_json=request_json[key])
-                elif key =='additional_info':
-                    tmp[key] = request_json[key]
-                else:
-                    tmp[key] = request_json[key]
-            except KeyError:
-                tmp[key] = None
-            except AttributeError:
-                pass
-        
-        cls_data: Self = cls(**tmp)
-        
-        return cls_data
 
-@dataclass
-class HomeSchema(SchemaModel): 
-    street: Optional[str]  = "Unknown"
-    city: Optional[str] = "Unknown"
-    state: Optional[str] = "Unknown"
-    postal_code: Optional[str] = "Unknown"
-    apartment_no: Optional[str] = "Unknown"
-    
-@dataclass
-class UserSchema(SchemaModel):
-    user_home: HomeSchema
-    user_name: Optional[str] = "Unknown"
-    first_name: Optional[str] = "Unknown"
-    last_name: Optional[str] = "Unknown"
-    phone_number: Optional[str] = "Unknown"
-    mobile_phone_number: Optional[str] = "Unknown"
-
-@dataclass
-class SystemErrorSchema(SchemaModel):
-    error_message: Optional[str]
-    error_code: Optional[str]
-    error_count: Optional[str]
-    timestamp: Optional[str]
-    
-    
-@dataclass
-class RequestSchema(SchemaModel):
-    user_request_text: Optional[str]
-    mention_users: Optional[bool]
-    topic: Optional[str]
-    subtopic: Optional[str]
-    session_id: Optional[str]
-    system_error_message: SystemErrorSchema
-    build_env: Optional[str]
-    timestamp: Optional[str]
-    additional_text: Optional[str]
-    request_origin: Optional[str]
-    verbose: Optional[bool]
-    user: UserSchema
-    additional_info: list[Any]
 
 def create_ms_teams_error_message(request: Optional[RequestSchema]):
     # Can create multiple versions of this function for specific reporting conditions

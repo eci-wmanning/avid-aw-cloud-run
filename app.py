@@ -63,6 +63,11 @@ def clarify_issue() -> str:
     logger.info(logField="custom-entry", called_route="clarify_issue")
     return google_cloud_functions.clarify_issue(request)
 
+@app.route("/ms_teams_error_messenger")
+def ms_teams_error_messenger() -> str:
+    logger.info(logField="custom-entry", called_route="ms_teams_error_messenger")
+    return google_cloud_functions.ms_teams_error_messenger(request)
+
 
 def shutdown_handler(signal_int: int, frame: FrameType) -> None:
     logger.info(f"Caught Signal {signal.strsignal(signal_int)}")
