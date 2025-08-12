@@ -71,10 +71,9 @@ def ms_teams_error_messenger() -> str:
 @app.route("/deploy_test")
 def deploy_test() -> str:
     logger.info(logField="custom-entry", called_route="deploy_test")
-    dot_key=dotenv_values(".env")['TEST_SECRET']
     env_key=os.environ.get('TEST_SECRET')
     
-    return {"key": dot_key, "env_key": env_key}
+    return {"env_key": env_key}
 
 def shutdown_handler(signal_int: int, frame: FrameType) -> None:
     logger.info(f"Caught Signal {signal.strsignal(signal_int)}")

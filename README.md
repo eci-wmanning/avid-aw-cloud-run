@@ -6,18 +6,18 @@ This project uses Google Cloud Run's microservice template & GitHub integration 
 
 [![Avid Cloud Run](https://deploy.cloud.run/button.svg)](https://console.cloud.google.com/run/detail/us-central1/avid-cloud-run/metrics?authuser=0&inv=1&invt=Ab5Tqg&project=homekeep-dev-1614708479592)
 
-# Build Environments
+## Build Environments   <span style="color:red">Important!</span>
 Avid Warranty & Homekeep both have multiple environments associated with their applications; `dev`, `stage` & `prod`
 
-## Dev
+### Dev
 - Firebase & Google Cloud Project: **Homekeep-AvidWarranty Dev**
 - Pushing to this project's `dev` branch triggers a deploy to the dev env only
 
-## Stage
+### Stage
 - Firebase & Google Cloud Project: **Homekeep-AvidWarranty Staging**
 - Merging changes from the `dev` branch into the `main` branch triggers a deploy to the stage and prod env
 
-## Prod
+### Prod
 - Firebase & Google Cloud Project: **Homekeep-AvidWarranty Prod**
 - Merging changes from the `dev` branch into the `main` branch triggers a deploy to the stage and prod env
 
