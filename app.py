@@ -15,10 +15,12 @@
 import signal
 import sys
 from types import FrameType
-import GoogleCloudFunctions
+import google_cloud_functions
 from flask import Flask, request
-
+import os
 from utils.logging import logger
+from dotenv import dotenv_values
+from utils import log
 
 app = Flask(__name__)
 
@@ -34,15 +36,27 @@ def hello() -> str:
     return "Hello, World!"
 
 
-@app.route("/wait-sec")
+@app.route("/wait_sec")
 def wait_sec() -> str:
-    # Use basic logging with custom fields
-    return GoogleCloudFunctions.copilotWaitSec(request)
+    return google_cloud_functions.copilotWaitSec(request)
 
 @app.route("/set_copilot_postman_monitor_flag")
 def set_copilot_postman_monitor_flag() -> str:
-    # Use basic logging with custom fields
-    return GoogleCloudFunctions.set_copilot_postman_monitor_flag(request)
+    return google_cloud_functions.set_copilot_postman_monitor_flag(request)
+
+
+@app.route("/get_topic_intents")
+def get_topic_intents() -> str:
+    return google_cloud_functions.getIntents(request)
+
+
+@app.route("/dynamic_qna")
+def dynamic_qna() -> str:
+    return google_cloud_functions.dynamic_qna(request)
+
+@app.route("/clarify_issue")
+def clarify_issue() -> str:
+    return google_cloud_functions.clarify_issue(request)
 
 
 def shutdown_handler(signal_int: int, frame: FrameType) -> None:
@@ -57,6 +71,7 @@ def shutdown_handler(signal_int: int, frame: FrameType) -> None:
 
 if __name__ == "__main__":
     # Running application locally, outside of a Google Cloud Environment
+    log(key=dotenv_values(".env")['AZURE_AI_API_KEY'])
 
     # handles Ctrl-C termination
     signal.signal(signal.SIGINT, shutdown_handler)

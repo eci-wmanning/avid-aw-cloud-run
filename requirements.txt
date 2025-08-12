@@ -7,7 +7,9 @@ structlog==25.1.0
 pymsteams==0.2.*
 pydantic==2.*
 typing_extensions==4.*
+pyyaml==6.*
 google-cloud-firestore==2.20.1
 firebase-admin==6.7.0
 google-auth==2.39.0
+python-dotenv==1.1.1
 # firebase-functions==0.4.3

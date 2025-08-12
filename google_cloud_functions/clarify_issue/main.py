@@ -8,6 +8,7 @@ from openai import AsyncAzureOpenAI
 from typing import Any, List, Optional
 import asyncio
 import os
+from models import FBTopicList
 
 try:
     cred = credentials.ApplicationDefault()
@@ -16,22 +17,22 @@ except Exception as err:
     print(err)
 
 
-class FBTopicList(Enum): 
-    APPLIANCES = 'appliances'
-    DECKING = "decking"
-    DOORS = "doors"
-    ELECTRICAL = "electrical"
-    EXTERIOR_FINISHES= "exterior_finishes"
-    FLOORING = "flooring"
-    FOUNDATION = "foundation"
-    GARAGE ="garage"
-    INTERIOR_CLIMATE_CONTROL = "interior_climate_control"
-    INTERIOR_FINISHES = "interior_finishes"
-    LANDSCAPE_AND_SITEWORK = "landscape_and_sitework"
-    PLUMBING = "plumbing"
-    ROOF = "roof"
-    STRUCTURAL = "structural"
-    WALLS_AND_CEILINGS = "walls_and_ceilings"
+# class FBTopicList(Enum): 
+#     APPLIANCES = 'appliances'
+#     DECKING = "decking"
+#     DOORS = "doors"
+#     ELECTRICAL = "electrical"
+#     EXTERIOR_FINISHES= "exterior_finishes"
+#     FLOORING = "flooring"
+#     FOUNDATION = "foundation"
+#     GARAGE ="garage"
+#     INTERIOR_CLIMATE_CONTROL = "interior_climate_control"
+#     INTERIOR_FINISHES = "interior_finishes"
+#     LANDSCAPE_AND_SITEWORK = "landscape_and_sitework"
+#     PLUMBING = "plumbing"
+#     ROOF = "roof"
+#     STRUCTURAL = "structural"
+#     WALLS_AND_CEILINGS = "walls_and_ceilings"
     
 class BuildEnv(Enum):
     
@@ -104,6 +105,7 @@ class TopicTrainingModel(BaseModel):
     additional_notes: Optional[str] = ''
     additional_topic_info: Optional[str] = ''
     system_instructions: list[Any]  = []
+
 
 class FireStoreTopics:
     

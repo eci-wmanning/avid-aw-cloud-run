@@ -1,0 +1,4 @@
+functions-framework==3.*
+pydantic==2.*
+openai==1.*
+typing_extensions==4.*

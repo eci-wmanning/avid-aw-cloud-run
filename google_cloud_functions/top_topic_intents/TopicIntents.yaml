@@ -8,12 +8,13 @@
     DisplayName: "Uneven Backsplash/Counter Edge",
     TopicId: "crc5c_interiorFinishes.topic.BacksplashesCountertopsWithExcessiveEdges",
     Topic: "interiorFinishes", 
-    SubTopics: ["Countertops"]
+    SubTopics: ["Countertops", "countertops"]
   },
     ]
   },
   interiorFinishes: {
     DisplayName: "Interior Finishes",
+    SchemaName: "interiorFinishes",
     Topics: [
   {
     TriggerId: "main",
@@ -21,7 +22,7 @@
     DisplayName: "Uneven Backsplash/Counter Edge",
     TopicId: "crc5c_interiorFinishes.topic.BacksplashesCountertopsWithExcessiveEdges",
     Topic: "interiorFinishes",
-    SubTopics: ["Countertops", "Interior Wall Finish"]
+    SubTopics: ["Countertops", "countertops", "Interior Wall Finish", "interior_wall_finish"]
   },
   {
     TriggerId: "main",
@@ -29,7 +30,7 @@
     DisplayName: "Bouncing Stairs",
     TopicId: "crc5c_interiorFinishes.topic.InteriorStairsDeflection",
     Topic: "interiorFinishes", 
-    SubTopics: ["Stairs"]
+    SubTopics: ["Stairs", "stairs"]
   },
   {
     TriggerId: "main",
@@ -37,7 +38,7 @@
     DisplayName: "Door/Drawer Binds",
     TopicId: "crc5c_interiorFinishes.topic.InteriorFinishesCabinetsCabinetDrawerorDoorBinds",
     Topic: "interiorFinishes",
-    SubTopics: ["Cabinets"]
+    SubTopics: ["Cabinets", "cabinets"]
   },
   {
     TriggerId: "main",
@@ -45,15 +46,15 @@
     DisplayName: "Door/Drawer Cracked",
     TopicId: "crc5c_interiorFinishes.topic.InteriorFinishesCabinetsCabinetDrawerorDoorisCracked",
     Topic: "interiorFinishes",
-    SubTopics: ["Cabinets"]
+    SubTopics: ["Cabinets", "cabinets"]
   },
   {
     TriggerId: "main",
     ExternalIntentId: "CabinetMisalignedNotSquare",
-    DisplayName: "Misaligned/Not Square",
-    TopicId: "crc5c_interiorFinishes.topic.InteriorFinishCabinetsCabinetsMisaligned",
+    DisplayName: "Cabinets Misaligned/Not Square",
+    TopicId: "crc5c_interiorFinishes.topic.Cabinetsmisaligned",
     Topic: "interiorFinishes",
-    SubTopics: ["Cabinets"]
+    SubTopics: ["Cabinets", "cabinets"]
   },
   {
     TriggerId: "main",
@@ -61,7 +62,7 @@
     DisplayName: "Bad Wall Joint",
     TopicId: "crc5c_interiorFinishes.topic.BadAngularDrywallJoints",
     Topic: "interiorFinishes", 
-    SubTopics: ["Interior Wall Finish"]
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish"]
   },
   {
     TriggerId: "main",
@@ -69,7 +70,7 @@
     DisplayName: "Nicks Chips Scratches",
     TopicId: "crc5c_interiorFinishes.topic.Untitled",
     Topic: "interiorFinishes", 
-    SubTopics: ["Cabinets"]
+    SubTopics: ["Cabinets", "cabinets"]
   },
   {
     TriggerId: "main",
@@ -77,7 +78,7 @@
     DisplayName: "Not Meeting Wall",
     TopicId: "crc5c_interiorFinishes.topic.InteriorFinishCabinetsCabinetnotmeetingwall",
     Topic: "interiorFinishes", 
-    SubTopics: ["Cabinets"]
+    SubTopics: ["Cabinets", "cabinets"]
   },
   {
     TriggerId: "main",
@@ -85,7 +86,7 @@
     DisplayName: "Cabinets Hanging",
     TopicId: "crc5c_interiorFinishes.topic.CabinetsHanging",
     Topic: "interiorFinishes", 
-    SubTopics: ["Cabinets"]
+    SubTopics: ["Cabinets", "cabinets"]
   },
   {
     TriggerId: "main",
@@ -93,7 +94,7 @@
     DisplayName: "Cabinets Not Level",
     TopicId: "crc5c_interiorFinishes.topic.InteriorFinishesCabinetsCabinetsNotLevel",
     Topic: "interiorFinishes", 
-    SubTopics: ["Cabinets"]
+    SubTopics: ["Cabinets", "cabinets"]
   },
   {
     TriggerId: "main",
@@ -101,7 +102,7 @@
     DisplayName: "Won't Stay Closed",
     TopicId: "crc5c_interiorFinishes.topic.InteriorFinishesCabinetsCabinetWontStayClosed",
     Topic: "interiorFinishes", 
-    SubTopics: ["Cabinets"]
+    SubTopics: ["Cabinets", "cabinets"]
   },
   {
     TriggerId: "main",
@@ -109,7 +110,7 @@
     DisplayName: "Chipped Counter",
     TopicId: "crc5c_interiorFinishes.topic.ChippedStoneorSolidCountertop",
     Topic: "interiorFinishes", 
-    SubTopics: ["Countertops"]
+    SubTopics: ["Countertops", "countertops"]
   },
   {
     TriggerId: "main",
@@ -117,7 +118,7 @@
     DisplayName: "Color Mismatch",
     TopicId: "crc5c_interiorFinishes.topic.InteriorWallFinishMismatch",
     Topic: "interiorFinishes", 
-    SubTopics: ["Interior Wall Finish"]
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish"]
   },
   {
     TriggerId: "main",
@@ -125,7 +126,7 @@
     DisplayName: "Counter Not Level",
     TopicId: "crc5c_interiorFinishes.topic.CountertopsNotLevel",
     Topic: "interiorFinishes", 
-    SubTopics: ["Countertops"]
+    SubTopics: ["Countertops", "countertops"]
   },
   {
     TriggerId: "main",
@@ -133,7 +134,7 @@
     DisplayName: "Cracked Caulk",
     TopicId: "crc5c_interiorFinishes.topic.InteriorFinishTrimMoldingsCaulkcracking",
     Topic: "interiorFinishes", 
-    SubTopics: ["Trim and Moldings"]
+    SubTopics: ["Trim and Moldings", "trim_and_moldings", "Interior Wall Finish", "interior_wall_finish"]
   },
   {
     TriggerId: "main",
@@ -141,7 +142,7 @@
     DisplayName: "Crack/Chipped Laminate",
     TopicId: "crc5c_interiorFinishes.topic.InteriorFinishesCountertopsCrackedorChippedLaminateSurface",
     Topic: "interiorFinishes", 
-    SubTopics: ["Countertops"]
+    SubTopics: ["Countertops", "countertops"]
   },
   {
     TriggerId: "main",
@@ -149,7 +150,7 @@
     DisplayName: "Cracked Marble",
     TopicId: "crc5c_interiorFinishes.topic.CrackedMarbleAroundDrain",
     Topic: "interiorFinishes", 
-    SubTopics: ["Countertops"]
+    SubTopics: ["Countertops", "countertops"]
   },
   {
     TriggerId: "main",
@@ -157,7 +158,7 @@
     DisplayName: "Cracked Tile/Grout",
     TopicId: "crc5c_interiorFinishes.topic.CrackedBacksplashGrout",
     Topic: "interiorFinishes", 
-    SubTopics: ["Countertops", "Interior Wall Finish", "Trim and Moldings"]
+    SubTopics: ["Countertops", "countertops", "Interior Wall Finish", "interior_wall_finish", "Trim and Moldings", "trim_and_moldings"]
   },
   {
     TriggerId: "main",
@@ -165,7 +166,7 @@
     DisplayName: "Damaged Drywall",
     TopicId: "crc5c_interiorFinishes.topic.InteriorFinishInteriorWallFinishDamageddrywall",
     Topic: "interiorFinishes", 
-    SubTopics: ["Interior Wall Finish"]
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish"]
   },
   {
     TriggerId: "main",
@@ -173,7 +174,7 @@
     DisplayName: "Delaminated Cabinet",
     TopicId: "crc5c_interiorFinishes.topic.InteriorFinishesCabinetsDelaminatedDrawerorDoor",
     Topic: "interiorFinishes", 
-    SubTopics: ["Cabinets"]
+    SubTopics: ["Cabinets", "cabinets"]
   },
   {
     TriggerId: "main",
@@ -181,7 +182,7 @@
     DisplayName: "Delaminated Counter Top",
     TopicId: "crc5c_interiorFinishes.topic.InteriorFinishesCountertopsDelaminatedCountertops",
     Topic: "interiorFinishes", 
-    SubTopics: ["Countertops"]
+    SubTopics: ["Countertops", "countertops"]
   },
   {
     TriggerId: "main",
@@ -189,7 +190,7 @@
     DisplayName: "Discolored Stain or Blemish",
     TopicId: "crc5c_interiorFinishes.topic.CountertopDiscolorationorBlemish",
     Topic: "interiorFinishes", 
-    SubTopics: ["Countertops"]
+    SubTopics: ["Countertops", "countertops"]
   },
   {
     TriggerId: "main",
@@ -197,7 +198,7 @@
     DisplayName: "Wall/Ceiling Crack",
     TopicId: "crc5c_interiorFinishes.topic.FinishedWallorCeilingCracks",
     Topic: "interiorFinishes", 
-    SubTopics: ["Interior Wall Finish"]
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish"]
   },
   {
     TriggerId: "main",
@@ -205,7 +206,7 @@
     DisplayName: "Trim Gaps",
     TopicId: "crc5c_interiorFinishes.topic.TrimMoldingsGaps",
     Topic: "interiorFinishes", 
-    SubTopics: ["Trim and Moldings"]
+    SubTopics: ["Trim and Moldings", "trim_and_moldings", "Interior Wall Finish", "interior_wall_finish"]
   },
   {
     TriggerId: "main",
@@ -213,7 +214,7 @@
     DisplayName: "Grout Uneven",
     TopicId: "crc5c_interiorFinishes.topic.UnevenGroutLines",
     Topic: "interiorFinishes", 
-    SubTopics: ["Trim and Moldings", "Interior Wall Finish"]
+    SubTopics: ["Trim and Moldings", "trim_and_moldings", "Interior Wall Finish", "interior_wall_finish", "countertops", "Countertops"]
   },
   {
     TriggerId: "main",
@@ -221,7 +222,7 @@
     DisplayName: "Hammer Marks",
     TopicId: "crc5c_interiorFinishes.topic.TrimMoldingsHammerMarks",
     Topic: "interiorFinishes", 
-    SubTopics: ["Trim and Moldings"]
+    SubTopics: ["Trim and Moldings", "trim_and_moldings", "Interior Wall Finish", "interior_wall_finish"]
   },
   {
     TriggerId: "main",
@@ -229,7 +230,7 @@
     DisplayName: "Hinges/Slide Issue",
     TopicId: "crc5c_interiorFinishes.topic.InteriorFinishesCabinetsHingesorSlidesNotWorking",
     Topic: "interiorFinishes", 
-    SubTopics: ["Cabinets"]
+    SubTopics: ["Cabinets", "cabinets"]
   },
   {
     TriggerId: "main",
@@ -237,7 +238,7 @@
     DisplayName: "Paint Color",
     TopicId: "crc5c_interiorFinishes.topic.InteriorFinishInteriorWallFinishPaintColor",
     Topic: "interiorFinishes", 
-    SubTopics: ["Interior Wall Finish"]
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish", "Trim and Moldings", "trim_and_moldings"]
   },
   {
     TriggerId: "main",
@@ -245,7 +246,7 @@
     DisplayName: "Mold/Mildew",
     TopicId: "crc5c_interiorFinishes.topic.InteriorWallFinishMoldorMildew",
     Topic: "interiorFinishes", 
-    SubTopics: ["Interior Wall Finish"]
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish"]
   },
   {
     TriggerId: "main",
@@ -253,27 +254,21 @@
     DisplayName: "Nail Holes",
     TopicId: "crc5c_interiorFinishes.topic.TrimMoldingsNails",
     Topic: "interiorFinishes", 
-    SubTopics: ["Trim and Moldings", "Interior Wall Finish"]
+    SubTopics: ["Trim and Moldings", "trim_and_moldings", "Interior Wall Finish", "interior_wall_finish"]
   },
   {
     TriggerId: "main",
     ExternalIntentId: "NonMatchingTexture",
     TopicId: "crc5c_interiorFinishes.topic.Non-MatchingDrywallTexture",
     Topic: "interiorFinishes", 
-    SubTopics: ["Interior Wall Finish"]
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish"]
   },
-  {
-    TriggerId: "main",
-    ExternalIntentId: "BowedWarpedCuppedTrim",
-    Topic: "interiorFinishes", 
-    SubTopics: ["Trim and Moldings"]
-    },
   {
     DisplayName: "Texture Mismatch",
     ExternalIntentId: "NonMatchingTexture",
     TopicId: "crc5c_interiorFinishes.topic.Non-MatchingDrywallTexture",
     Topic: "interiorFinishes", 
-    SubTopics: ["Interior Wall Finish"]
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish"]
   },
   {
     TriggerId: "main",
@@ -281,7 +276,7 @@
     DisplayName: "Paint Coverage/Mismatch",
     TopicId: "crc5c_interiorFinishes.topic.InteriorWallFinishPaintIssueWalls",
     Topic: "interiorFinishes", 
-    SubTopics: ["Interior Wall Finish"]
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish"]
   },
   {
     TriggerId: "main",
@@ -289,7 +284,7 @@
     DisplayName: "Peeling",
     TopicId: "crc5c_interiorFinishes.topic.InteriorWallFinishPeelingWallcover",
     Topic: "interiorFinishes",
-     SubTopics: []"Interior Wall Finish"]
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish"]
   },
   {
     TriggerId: "main",
@@ -297,7 +292,7 @@
     DisplayName: "Rail Gaps",
     TopicId: "crc5c_interiorFinishes.topic.InteriorStairsGaps",
     Topic: "interiorFinishes", 
-    SubTopics: ["Stairs"]
+    SubTopics: ["Stairs", "stairs"]
   },
   {
     TriggerId: "main",
@@ -305,7 +300,7 @@
     DisplayName: "Loose Railing",
     TopicId: "crc5c_interiorFinishes.topic.Untitled1_w3D",
     Topic: "interiorFinishes", 
-    SubTopics: ["Stairs"]
+    SubTopics: ["Stairs", "stairs"]
   },
   {
     TriggerId: "main",
@@ -313,7 +308,7 @@
     DisplayName: "Scratched Counter Top",
     TopicId: "crc5c_interiorFinishes.topic.ScratchedCountertops",
     Topic: "interiorFinishes", 
-    SubTopics: ["Countertops"]
+    SubTopics: ["Countertops", "countertops"]
   },
   {
     TriggerId: "main",
@@ -321,7 +316,7 @@
     DisplayName: "Bad Wall Finish",
     TopicId: "crc5c_interiorFinishes.topic.SloppyorBadDrywallFinish",
     Topic: "interiorFinishes", 
-    SubTopics: ["Interior Wall Finish"]
+    SubTopics: ["Trim and Moldings", "trim_and_moldings", "Interior Wall Finish", "interior_wall_finish"]
   },
   {
     TriggerId: "main",
@@ -329,7 +324,7 @@
     DisplayName: "Split/Cracked Trim",
     TopicId: "crc5c_interiorFinishes.topic.TrimMoldingsSplit",
     Topic: "interiorFinishes", 
-    SubTopics: ["Trim and Moldings", "Interior Wall Finish"]
+    SubTopics: ["Trim and Moldings", "trim_and_moldings", "Interior Wall Finish", "interior_wall_finish"]
   },
   {
     TriggerId: "main",
@@ -337,7 +332,7 @@
     DisplayName: "Stairs Squeaking",
     TopicId: "crc5c_interiorFinishes.topic.InteriorFinishStairsStairssqueaking",
     Topic: "interiorFinishes", 
-    SubTopics: ["Stairs"]
+    SubTopics: ["Stairs", "stairs"]
   },
   {
     TriggerId: "main",
@@ -345,7 +340,7 @@
     DisplayName: "Trim Variation",
     TopicId: "crc5c_interiorFinishes.topic.TrimMoldingsUneven",
     Topic: "interiorFinishes", 
-    SubTopics: ["Trim and Moldings"]
+    SubTopics: ["Trim and Moldings", "trim_and_moldings"]
   },
   {
     TriggerId: "main",
@@ -353,7 +348,7 @@
     DisplayName: "Visible Counter Seams",
     TopicId: "crc5c_interiorFinishes.topic.VisibleCountertopSeams",
     Topic: "interiorFinishes", 
-    SubTopics: ["Countertops"]
+    SubTopics: ["Countertops", "countertops"]
   },
   {
     TriggerId: "main",
@@ -361,7 +356,7 @@
     DisplayName: "Visible Wood",
     TopicId: "crc5c_interiorFinishes.topic.InteriorFinishPaintIssueTrim",
     Topic: "interiorFinishes", 
-    SubTopics: ["Interior Wall Finish", "Trim and Moldings"]
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish", "Trim and Moldings", "trim_and_moldings"]
   },
   {
     TriggerId: "main",
@@ -369,7 +364,7 @@
     DisplayName: "Wall/Ceiling Blemish",
     TopicId: "crc5c_interiorFinishes.topic.FinishedWallorCeilingBlemishes",
     Topic: "interiorFinishes", 
-    SubTopics: ["Interior Wall Finish"]
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish"]
   },
   {
     TriggerId: "main",
@@ -377,7 +372,7 @@
     DisplayName: "Cabinet Warped",
     TopicId: "crc5c_interiorFinishes.topic.InteriorFinishesCabinetsWarpedCabinetDrawerorDoor",
     Topic: "interiorFinishes", 
-    SubTopics: ["Cabinets"],
+    SubTopics: ["Cabinets", "cabinets"],
   },
   {
     TriggerId: "main",
@@ -385,12 +380,13 @@
     DisplayName: "Wall Cover Mismatch",
     TopicId: "crc5c_interiorFinishes.topic.InteriorWallFinishMismatch",
     Topic: "interiorFinishes", 
-    SubTopics: ["Interior Wall Finish"]
+    SubTopics: ["Interior Wall Finish", "interior_wall_finish"]
   },
     ]
   },
   eric: {
     DisplayName: "Exterior Finishes",
+    SchemaName: "eric",
     Topics: [
   {
     TriggerId: "main",
@@ -425,7 +421,9 @@
     SubTopics: ["siding"]
   },
   {
+    TriggerId: "main",
     DisplayName: "Warped trim",
+    ExternalIntentId: "BowedWarpedCuppedTrim",
     TopicId: "crc5c_eric.topic.ExteriorTrimBowedWarpedCupped",
     Topic: "eric", 
     SubTopics: ["exterior_trim"]
@@ -460,7 +458,7 @@
     DisplayName: "Loose siding",
     TopicId: "crc5c_eric.topic.LooseRattlingSidingorTrimCopy",
     Topic: "eric", 
-    SubTopics: ["stone_siding", "siding"]
+    SubTopics: ["exterior_trim"]
   },
   {
     TriggerId: "main",
@@ -500,7 +498,7 @@
     DisplayName: "Knots showing",
     TopicId: "crc5c_eric.topic.PaintsStainsBleedingKnots",
     Topic: "eric", 
-    SubTopics: ["paints_and_stains"]
+    SubTopics: ["paints_and_stains", "exterior_trim"]
   },
   {
     TriggerId: "main",
@@ -524,7 +522,7 @@
     ExternalIntentId: "VisibleLath",
     TopicId: "crc5c_eric.topic.SidingBleedThrough",
     Topic: "eric", 
-    SubTopics: ["siding"]
+    SubTopics: ["siding", "paints_and_stains"]
   },
   {
     TriggerId: "main",
@@ -641,7 +639,7 @@
     ExternalIntentId: "CondensationOnPlumbing",
     TopicId: "crc5c_plumbing.topic.7-1-2Condensationonplumbing",
     Topic: "plumbing", 
-    SubTopics: []
+    SubTopics: ["sewer", "water_supply", "fixtures"]
   },
   {
     TriggerId: "main",
@@ -665,7 +663,7 @@
     ExternalIntentId: "GarbageDisposalIssue",
     TopicId: "crc5c_plumbing.topic.PlumbingPlumbingFixturesDisposalnotworking",
     Topic: "plumbing", 
-    SubTopics: ["fixtures"]
+    SubTopics: ["fixtures", "sewer"]
   },
   {
     TriggerId: "main",
@@ -699,6 +697,22 @@
     Topic: "plumbing", 
     SubTopics: ["sewer", "fixtures"]
   },
+    {
+    TriggerId: "main",
+    DisplayName: "Water outside tub or shower",
+    ExternalIntentId: "WaterOutsideTubShower",
+    TopicId: "crc5c_plumbing.topic.WaterOutsideTuborShower",
+    Topic: "plumbing", 
+    SubTopics: ["fixtures", "water_supply"]
+  },
+  {
+    TriggerId: "main",
+    DisplayName: "Shower or tub moves",
+    ExternalIntentId: "TubShowerMoves",
+    TopicId: "crc5c_plumbing.topic.ShowerorTubMoves",
+    Topic: "plumbing", 
+    SubTopics: ["fixtures"]
+  },
   {
     TriggerId: "main",
     DisplayName: "Sewer odor",
@@ -713,7 +727,7 @@
     ExternalIntentId: "BurstFrozenWaterPipe",
     TopicId: "crc5c_plumbing.topic.PlumbingWaterSupplySystemBurstFrozenPipes",
     Topic: "plumbing", 
-    SubTopics: ["sewer", "water_supply"]
+    SubTopics: ["sewer", "water_supply",]
   },
   {
     TriggerId: "main",
@@ -721,7 +735,7 @@
     ExternalIntentId: "WaterHeaterTakesTooLong",
     TopicId: "crc5c_plumbing.topic.PlumbingWaterSupplySystemWaterheater",
     Topic: "plumbing", 
-    SubTopics: ["water_supply"]
+    SubTopics: ["water_supply", "fixtures"]
   },
   {
     TriggerId: "main",
@@ -729,7 +743,7 @@
     ExternalIntentId: "WaterPressureIssue",
     TopicId: "crc5c_plumbing.topic.PlumbingWaterSupplySystemWaterpressure",
     Topic: "plumbing", 
-    SubTopics: ["water_supply"]
+    SubTopics: ["water_supply", "fixtures"]
   },
   {
     TriggerId: "main",
@@ -795,22 +809,6 @@
     TopicId: "crc5c_plumbing.topic.Watersupplyissue",
     Topic: "plumbing", 
     SubTopics: ["fixtures", "water_supply"]
-  },
-  {
-    TriggerId: "main",
-    DisplayName: "Sweating plumbing",
-    ExternalIntentId: "CondensationOnPlumbing",
-    TopicId: "crc5c_plumbing.topic.7-1-2Condensationonplumbing",
-    Topic: "plumbing", 
-    SubTopics: ["fixtures", "water_supply"]
-  },
-  {
-    TriggerId: "main",
-    DisplayName: "Plumbing fixtures",
-    ExternalIntentId: "PlumbingFixturesStainFit",
-    TopicId: "crc5c_plumbing.topic.7-2",
-    Topic: "plumbing", 
-    SubTopics: ["fixtures"]
   }
     ]
   },
@@ -949,7 +947,7 @@
     TriggerId: "main",
     DisplayName: "Temperature issue",
     ExternalIntentId: "IndoorTemperatureNotIdealVaries",
-    TopicId: "crc5c_interiorClimateControl.topic.TempSystemsInadequate",
+    TopicId: "crc5c_interiorClimateControl.topic.IndoorTemperatureIsNotIdeal",
     Topic: "interiorClimateControl", 
     SubTopics: [],
     ShowInUncertainOptions: false
