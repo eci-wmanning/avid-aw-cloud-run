@@ -229,18 +229,18 @@ class ClarifyIssue:
                 return ai_response
 
 def dynamic_qna(request):
-    if request.method == "OPTIONS":
-        headers = {
-            # "Access-Control-Allow-Origin": "http://localhost:3050",
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-            "Access-Control-Allow-Headers": "Origin, Content-Type, Accept",
-            "Access-Control-Max-Age": "3600",
-        }
-        request.mode = 'no-cors'
-        return ("OK", 204, headers)
-    else:
-        headers = {"Access-Control-Allow-Origin": "*"}
+    # if request.method == "OPTIONS":
+    #     headers = {
+    #         # "Access-Control-Allow-Origin": "http://localhost:3050",
+    #         "Access-Control-Allow-Origin": "*",
+    #         "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    #         "Access-Control-Allow-Headers": "Origin, Content-Type, Accept",
+    #         "Access-Control-Max-Age": "3600",
+    #     }
+    #     request.mode = 'no-cors'
+    #     return ("OK", 204, headers)
+    # else:
+    #     headers = {"Access-Control-Allow-Origin": "*"}
     
     log(processing_request=ResourceType.clarify_issue.value)
                 
@@ -254,10 +254,12 @@ def dynamic_qna(request):
             clarify_response = clarify_issue_resource.start_conversation(user_input=model.user_input, redirect_answer=None)
             log(clarify_response=clarify_response)
             if clarify_response:
-                return (clarify_response.model_dump(), 200, headers)
+                # return (clarify_response.model_dump(), 200, headers)
+                return (clarify_response.model_dump(), 200)
         else:
             cold_start = clarify_issue_resource.cold_start_instructions()
-            return ({"response": "OK"}, 200, headers)
+            # return ({"response": "OK"}, 200, headers)
+            return ({"response": "OK"}, 200)
         
 # @app.route("/dynamic_qna")
 # def dynamic_qna(request):
