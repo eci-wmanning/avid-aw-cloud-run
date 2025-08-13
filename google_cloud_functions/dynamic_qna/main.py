@@ -229,18 +229,18 @@ class ClarifyIssue:
                 return ai_response
 
 def dynamic_qna(request):
-    # if request.method == "OPTIONS":
-    #     headers = {
-    #         # "Access-Control-Allow-Origin": "http://localhost:3050",
-    #         "Access-Control-Allow-Origin": "*",
-    #         "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-    #         "Access-Control-Allow-Headers": "Origin, Content-Type, Accept",
-    #         "Access-Control-Max-Age": "3600",
-    #     }
-    #     request.mode = 'no-cors'
-    #     return ("OK", 204, headers)
-    # else:
-    #     headers = {"Access-Control-Allow-Origin": "*"}
+    if request.method == "OPTIONS":
+        headers = {
+            # "Access-Control-Allow-Origin": "http://localhost:3050",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+            "Access-Control-Allow-Headers": "Origin, Content-Type, Accept",
+            "Access-Control-Max-Age": "3600",
+        }
+        request.mode = 'no-cors'
+        return ("OK", 204, headers)
+    else:
+        headers = {"Access-Control-Allow-Origin": "*"}
     
     log(processing_request=ResourceType.clarify_issue.value)
                 
@@ -254,129 +254,8 @@ def dynamic_qna(request):
             clarify_response = clarify_issue_resource.start_conversation(user_input=model.user_input, redirect_answer=None)
             log(clarify_response=clarify_response)
             if clarify_response:
-                # return (clarify_response.model_dump(), 200, headers)
-                return (clarify_response.model_dump(), 200)
+                return (clarify_response.model_dump(), 200, headers)
         else:
             cold_start = clarify_issue_resource.cold_start_instructions()
-            # return ({"response": "OK"}, 200, headers)
-            return ({"response": "OK"}, 200)
-        
-# @app.route("/dynamic_qna")
-# def dynamic_qna(request):
-#     if request.method == "OPTIONS":
-#         headers = {
-#             # "Access-Control-Allow-Origin": "http://localhost:3050",
-#             "Access-Control-Allow-Origin": "*",
-#             "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-#             "Access-Control-Allow-Headers": "Origin, Content-Type, Accept",
-#             "Access-Control-Max-Age": "3600",
-#         }
-#         request.mode = 'no-cors'
-#         return ("OK", 204, headers)
-#     else:
-#         headers = {"Access-Control-Allow-Origin": "*"}
-    
-#     log(processing_request=ResourceType.clarify_issue.value)
-                
-#     model: CopilotRequest = RequestModel(request=request).request_model
-
-#     app = AIResource()
-#     # try:
-#     #     app = AIResource()
-#     # except Exception as err:
-#     #     log(error_encountered=err.add_note("Unexpected request body."))
-#         # return ({"response": "Query sent using invalid 'resource' value. Expected: {}".format([e.value for e in ResourceType])}, 500, headers)
-                    
-#     if model and model.copilot and model.subtopic:
-#         clarify_issue_resource = ClarifyIssue(copilot=model.copilot, subtopic=model.subtopic, ai_resource=app)
-#         if model.copilot and model.subtopic and model.user_input:
-#             clarify_response = clarify_issue_resource.start_conversation(user_input=model.user_input, redirect_answer=None)
-#             log(clarify_response=clarify_response)
-#             if clarify_response:
-#                 return (clarify_response.model_dump(), 200, headers)
-#         else:
-#             cold_start = clarify_issue_resource.cold_start_instructions()
-#             return ({"response": "OK"}, 200, headers)
-
-
-
-# def dynamic_qna(request):
-#     """
-#     * cmd: $ cd MSAzureOpenAI/dynamic_q_n_a/;functions-framework-python --target dynamic_qna 
-#         * note: If local process still running on 8080 => lsof -i tcp:8080; kill -9 PID
-#     """
-#     if request.method == "OPTIONS":
-#         headers = {
-#             # "Access-Control-Allow-Origin": "http://localhost:3050",
-#             "Access-Control-Allow-Origin": "*",
-#             "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-#             "Access-Control-Allow-Headers": "Origin, Content-Type, Accept",
-#             "Access-Control-Max-Age": "3600",
-#         }
-#         request.mode = 'no-cors'
-#         return ("OK", 204, headers)
-#     else:
-#         headers = {"Access-Control-Allow-Origin": "*"}
-    
-#     try:
-#         resource_type = ResourceType(request.args.get("resource"))
-#         app = AIResource()
-#     except Exception as err:
-#         log(error_encountered=err.add_note("Unexpected request body."))
-#         return ({"response": "Query sent using invalid 'resource' value. Expected: {}".format([e.value for e in ResourceType])}, 500, headers)
-    
-#     log(processing_request=resource_type.value)
-#     match resource_type:
-        
-#         case ResourceType.clarify:
-#             clarify_issue_creator_resource: CopilotQuestionFormat = ClarifyIssueCreator(ai_resource=app, request=request).start_conversation()
-#             if clarify_issue_creator_resource:
-#                 return (clarify_issue_creator_resource.model_dump(), 200, headers)
-            
-#         case ResourceType.clarify_issue:
-#                 log(processing_request=ResourceType.clarify_issue.value)
-            
-#                 model: CopilotRequest = RequestModel(request=request).request_model
-                
-#                 if model and model.copilot and model.subtopic:
-#                     clarify_issue_resource = ClarifyIssue(copilot=model.copilot, subtopic=model.subtopic, ai_resource=app)
-#                     if model.copilot and model.subtopic and model.user_input:
-#                         clarify_response = clarify_issue_resource.start_conversation(user_input=model.user_input, redirect_answer=None)
-#                         log(clarify_response=clarify_response)
-#                         if clarify_response:
-#                             return (clarify_response.model_dump(), 200, headers)
-#                     else:
-#                         cold_start = clarify_issue_resource.cold_start_instructions()
-#                         return ({"response": "OK"}, 200, headers)
-                    
-#         case ResourceType.warranty_progressive_stream:
-            
-#             request_model: CopilotRequest = RequestModel(request=request).request_model
-            
-#             if request_model and request_model.copilot and request_model.subtopic:
-#                 question_creator_resource = QuestionCreator(copilot=request_model.copilot, subtopic=request_model.subtopic, ai_resource=app)
-#             if request_model.redirect_answer:
-#                 redirect_response: CopilotAnswerFormat | None = question_creator_resource.get_redirect_value(user_input=request_model.user_input, redirect_answer=request_model.redirect_answer)
-#                 if redirect_response:
-#                     return (redirect_response.model_dump(), 200, headers)
-#             elif request_model.copilot and request_model.subtopic and request_model.user_input:
-#                 response: CopilotQuestionFormat | None = question_creator_resource.start_conversation(user_input=request_model.user_input, redirect_answer=None, dialog=None)
-                    
-#                 if response:
-#                     return (response.model_dump(), 200, headers)
-#             else:
-#                 cold_start = question_creator_resource.cold_start_instructions()
-#                 return ({"response": "OK"}, 200, headers)
-            
-#         case ResourceType.none | ResourceType.cold_start:
-            
-#             request_model: CopilotRequest = RequestModel(request=request).request_model
-#             if request_model and request_model.copilot and request_model.subtopic:
-#                 question_creator_resource = QuestionCreator(copilot=request_model.copilot, subtopic=request_model.subtopic, ai_resource=app)
-#                 cold_start = question_creator_resource.cold_start_instructions()
-#                 return ({"response": "OK"}, 200, headers)
-            
-#         case _:
-            
-#             return ({"response": "OK"}, 200, headers) 
+            return ({"response": "OK"}, 200, headers)
         
