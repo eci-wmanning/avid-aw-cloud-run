@@ -53,12 +53,12 @@ def get_topic_intents() -> str:
     return google_cloud_functions.getIntents(request)
 
 
-@app.route("/dynamic_qna")
+@app.route("/dynamic_qna", methods = ['GET', 'POST'])
 def dynamic_qna() -> str:
     logger.info(logField="custom-entry", called_route="dynamic_qna")
     return google_cloud_functions.dynamic_qna(request)
 
-@app.route("/clarify_issue")
+@app.route("/clarify_issue", methods = ['GET', 'POST'])
 def clarify_issue() -> str:
     logger.info(logField="custom-entry", called_route="clarify_issue")
     return google_cloud_functions.clarify_issue(request)
